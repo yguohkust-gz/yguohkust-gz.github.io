@@ -1,7 +1,7 @@
 ---
 title: Yulei Yang (杨宇雷)
 anchor_id: people-yuleiyang
-image: /images/yuleiyang.jpg
+image: /images/yuleiyang02.jpg
 image_url: people.html#people-yuleiyang
 language: en
 order: 4
