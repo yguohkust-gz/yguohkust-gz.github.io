@@ -1,0 +1,25 @@
+---
+title: Ning Chai (柴宁)
+anchor_id: people-ningchai
+image: /images/NingChai.jpg
+image_url: people.html#people-NingChai
+language: en
+order: 2
+actions:
+  - email:
+    title: Email
+    icon: solid fa-envelope-square
+    url: mailto:lanziru@foxmail.com
+  # - github:
+  #   title: GitHub
+  #   icon: brands fa-github-square
+  #   url: https://github.com/zwei961120
+  - googlescholar:
+    title: Google Scholar
+    icon: ai ai-google-scholar-square
+    url: https://scholar.google.com/citations?user=iJwWddIAAAAJ
+---
+
+I am a postdoctoral researcher who joined the group after completing both my B.S. and Ph.D. at Lanzhou University, where I had the privilege of working with Professors Feng-Min Li and Feng Zhang. My doctoral research focused on the dynamics of the Food-Energy-Water-CO2 nexus, particularly examining the evolution of staple cereal production and distribution in China. Currently, my research interest lies in understanding the impact of food systems on carbon and nitrogen cycling. In the area of food production, I study how agricultural management practices affect greenhouse gas and reactive nitrogen emissions by rescaling the biogeochemical model DNDC. On the consumption side, I explore the potential socio-environmental impacts of embodied resources in food trade.
+
+

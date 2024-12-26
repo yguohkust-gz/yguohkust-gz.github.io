@@ -4,7 +4,7 @@ anchor_id: people-zirulan
 image: /images/lanziru.png
 image_url: people.html#people-zirulan
 language: en
-order: 2
+order: 3
 actions:
   - email:
     title: Email

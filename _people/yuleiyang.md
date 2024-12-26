@@ -4,7 +4,7 @@ anchor_id: people-yuleiyang
 image: /images/yuleiyang02.jpg
 image_url: people.html#people-yuleiyang
 language: en
-order: 4
+order: 5
 actions:
   - email:
     title: Email

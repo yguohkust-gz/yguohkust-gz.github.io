@@ -4,7 +4,7 @@ anchor_id: people-yuezhang
 image: /images/yuezhang.jpg
 image_url: people.html#people-yuezhang
 language: en
-order: 5
+order: 6
 actions:
   - email:
     title: Email

@@ -4,7 +4,7 @@ anchor_id: people-zihanniu
 image: /images/zihanniu.jpg
 image_url: people.html#people-zihanniu
 language: en
-order: 6
+order: 7
 actions:
   - email:
     title: Email

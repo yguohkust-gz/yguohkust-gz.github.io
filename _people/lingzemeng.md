@@ -4,7 +4,7 @@ anchor_id: people-lingze
 image: /images/lingzemeng.jpg
 image_url: people.html#people-lingzemeng
 language: en
-order: 3
+order: 4
 actions:
   - email:
     title: Email
