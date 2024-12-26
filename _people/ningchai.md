@@ -6,10 +6,10 @@ image_url: people.html#people-NingChai
 language: en
 order: 2
 actions:
-  # - email:
-  #   title: Email
-  #  icon: solid fa-envelope-square
-  #  url: mailto:lanziru@foxmail.com
+  - email:
+     title: Email
+    icon: solid fa-envelope-square
+    url: ningchai@hkust-gz.edu.cn
   # - github:
   #   title: GitHub
   #   icon: brands fa-github-square
