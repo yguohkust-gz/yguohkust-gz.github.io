@@ -2,15 +2,16 @@
 title: Photo Wall
 language: en
 layout: default
-
+tab: photo-wall
 nav_order: 6  # 设置导航顺序
 ---
 
 # Photo Wall
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+
+  <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,11 +114,11 @@ nav_order: 6  # 设置导航顺序
         const photos = [
             {
                 src: "photo_wall/DSC06533.JPG",
-                caption: "Photo 1"
+                caption: "Group Photo 1"
             },
             {
                 src: "photo_wall/DSC06548.JPG",
-                caption: "Photo 2"
+                caption: "Group Photo 2"
             },
 
         ];
