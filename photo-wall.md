@@ -1,6 +1,8 @@
 ---
-layout: default
 title: Photo Wall
+language: en
+layout: default
+
 nav_order: 6  # 设置导航顺序
 ---
 
