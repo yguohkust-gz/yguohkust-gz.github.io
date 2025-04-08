@@ -59,7 +59,7 @@ nav_order: 6  # 设置导航顺序
         
         .photo-item img {
             width: 100%;
-            height: 200px;
+            height: 400px;
             object-fit: cover;
             display: block;
         }
