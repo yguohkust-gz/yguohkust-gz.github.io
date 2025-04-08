@@ -16,8 +16,7 @@ en:
     #  presentations:
     #   label: Presentations
     joinus:
-      label: Join us
-          
+      label: Join us       
     photowall:  # 照片墙
       label: Photo wall  # 显示的文本
-      path: photowall.html  # 指向的页面路径
+
