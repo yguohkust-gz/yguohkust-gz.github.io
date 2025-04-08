@@ -1,0 +1,483 @@
+---
+title: Photo wall
+language: en
+tab: photo
+layout: feature
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课题组 Photo Wall</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .filter-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .filter-container select {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .carousel {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+        
+        .carousel-item {
+            min-width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 10;
+            border-radius: 50%;
+        }
+        
+        .carousel-control.prev {
+            left: 10px;
+        }
+        
+        .carousel-control.next {
+            right: 10px;
+        }
+        
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .photo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .photo-caption {
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        
+        .modal-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        
+        .modal-nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .photo-wall {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .carousel {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .photo-wall {
+                grid-template-columns: 1fr;
+            }
+            
+            .carousel {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>课题组 Photo Wall</h1>
+    </header>
+    
+    <div class="container">
+        <div class="filter-container">
+            <select id="category-filter">
+                <option value="all">所有照片</option>
+                <option value="research">研究工作</option>
+                <option value="conference">学术会议</option>
+                <option value="fieldwork">实地考察</option>
+                <option value="team">团队活动</option>
+            </select>
+        </div>
+        
+        <div class="carousel">
+            <div class="carousel-inner" id="carousel-inner">
+                <!-- 轮播图图片 -->
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1200x400/?laboratory" alt="实验室">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1200x400/?conference" alt="学术会议">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1200x400/?team" alt="团队活动">
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">❮</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">❯</button>
+        </div>
+        
+        <div class="photo-wall" id="photo-wall">
+            <!-- 照片墙内容将通过JavaScript动态生成 -->
+        </div>
+    </div>
+    
+    <div class="modal" id="photo-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="放大图片">
+        </div>
+        <div class="modal-nav">
+            <button onclick="showPrevPhoto()">❮</button>
+            <button onclick="showNextPhoto()">❯</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 课题组 Photo Wall | 设计与开发</p>
+    </footer>
+    
+    <script>
+        // 照片数据
+        const photos = [
+            {
+                id: 1,
+                src: "https://source.unsplash.com/random/600x400/?laboratory",
+                caption: "实验室研究",
+                category: "research"
+            },
+            {
+                id: 2,
+                src: "https://source.unsplash.com/random/600x400/?microscope",
+                caption: "显微镜观察",
+                category: "research"
+            },
+            {
+                id: 3,
+                src: "https://source.unsplash.com/random/600x400/?conference",
+                caption: "国际学术会议",
+                category: "conference"
+            },
+            {
+                id: 4,
+                src: "https://source.unsplash.com/random/600x400/?presentation",
+                caption: "学术报告",
+                category: "conference"
+            },
+            {
+                id: 5,
+                src: "https://source.unsplash.com/random/600x400/?fieldwork",
+                caption: "野外考察",
+                category: "fieldwork"
+            },
+            {
+                id: 6,
+                src: "https://source.unsplash.com/random/600x400/?nature",
+                caption: "自然观察",
+                category: "fieldwork"
+            },
+            {
+                id: 7,
+                src: "https://source.unsplash.com/random/600x400/?team",
+                caption: "团队建设活动",
+                category: "team"
+            },
+            {
+                id: 8,
+                src: "https://source.unsplash.com/random/600x400/?celebration",
+                caption: "项目完成庆祝",
+                category: "team"
+            },
+            {
+                id: 9,
+                src: "https://source.unsplash.com/random/600x400/?discussion",
+                caption: "小组讨论",
+                category: "research"
+            },
+            {
+                id: 10,
+                src: "https://source.unsplash.com/random/600x400/?meeting",
+                caption: "课题组会议",
+                category: "team"
+            },
+            {
+                id: 11,
+                src: "https://source.unsplash.com/random/600x400/?experiment",
+                caption: "实验操作",
+                category: "research"
+            },
+            {
+                id: 12,
+                src: "https://source.unsplash.com/random/600x400/?data",
+                caption: "数据分析",
+                category: "research"
+            }
+        ];
+        
+        // 当前轮播图索引
+        let currentSlide = 0;
+        let slideInterval;
+        
+        // 当前照片索引（用于模态框）
+        let currentPhotoIndex = 0;
+        
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            renderPhotoWall('all');
+            setupCarousel();
+        });
+        
+        // 渲染照片墙
+        function renderPhotoWall(category) {
+            const photoWall = document.getElementById('photo-wall');
+            photoWall.innerHTML = '';
+            
+            const filteredPhotos = category === 'all' 
+                ? photos 
+                : photos.filter(photo => photo.category === category);
+            
+            filteredPhotos.forEach(photo => {
+                const photoItem = document.createElement('div');
+                photoItem.className = 'photo-item';
+                photoItem.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.caption}">
+                    <div class="photo-caption">${photo.caption}</div>
+                `;
+                
+                photoItem.addEventListener('click', () => {
+                    openModal(photo, filteredPhotos.indexOf(photo), filteredPhotos);
+                });
+                
+                photoWall.appendChild(photoItem);
+            });
+        }
+        
+        // 设置轮播图
+        function setupCarousel() {
+            const carouselInner = document.getElementById('carousel-inner');
+            const carouselItems = carouselInner.querySelectorAll('.carousel-item');
+            
+            // 设置自动轮播
+            slideInterval = setInterval(() => {
+                moveCarousel(1);
+            }, 5000);
+            
+            // 鼠标悬停时暂停轮播
+            carouselInner.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // 鼠标离开时恢复轮播
+            carouselInner.addEventListener('mouseleave', () => {
+                slideInterval = setInterval(() => {
+                    moveCarousel(1);
+                }, 5000);
+            });
+        }
+        
+        // 移动轮播图
+        function moveCarousel(direction) {
+            const carouselInner = document.getElementById('carousel-inner');
+            const carouselItems = carouselInner.querySelectorAll('.carousel-item');
+            const itemCount = carouselItems.length;
+            
+            currentSlide = (currentSlide + direction + itemCount) % itemCount;
+            carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+        
+        // 筛选照片
+        document.getElementById('category-filter').addEventListener('change', function() {
+            renderPhotoWall(this.value);
+        });
+        
+        // 打开模态框
+        function openModal(photo, index, allPhotos) {
+            const modal = document.getElementById('photo-modal');
+            const modalImg = document.getElementById('modal-img');
+            
+            modal.style.display = 'flex';
+            modalImg.src = photo.src;
+            
+            currentPhotoIndex = index;
+            currentPhotos = allPhotos;
+            
+            // 禁止背景滚动
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // 关闭模态框
+        function closeModal() {
+            const modal = document.getElementById('photo-modal');
+            modal.style.display = 'none';
+            
+            // 恢复背景滚动
+            document.body.style.overflow = 'auto';
+        }
+        
+        // 显示上一张照片
+        function showPrevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + currentPhotos.length) % currentPhotos.length;
+            updateModalImage();
+        }
+        
+        // 显示下一张照片
+        function showNextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % currentPhotos.length;
+            updateModalImage();
+        }
+        
+        // 更新模态框中的图片
+        function updateModalImage() {
+            const modalImg = document.getElementById('modal-img');
+            modalImg.src = currentPhotos[currentPhotoIndex].src;
+        }
+        
+        // 点击模态框背景关闭
+        document.getElementById('photo-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+        
+        // 键盘控制模态框
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('photo-modal').style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    closeModal();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrevPhoto();
+                } else if (e.key === 'ArrowRight') {
+                    showNextPhoto();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
