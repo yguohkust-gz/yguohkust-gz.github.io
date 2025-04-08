@@ -17,6 +17,7 @@ en:
     #   label: Presentations
     joinus:
       label: Join us       
-    photowall:  # 照片墙
-      label: Photo wall  # 显示的文本
+    photowall:
+      label: Photo Wall
+      path: photo-wall.md
 
