@@ -270,52 +270,17 @@ nav_order: 6  # 设置导航顺序
         const photos = [
             {
                 id: 1,
-                src: "https://source.unsplash.com/random/600x400/?laboratory",
-                caption: "Laboratory Research",
-                category: "research"
+                src: "C:\Users\Leo\Documents\GitHub\Leo-1924.github.io\photo_wall\DSC06533.JPG",
+                caption: "Group Photo",
+                category: "team"
             },
             {
                 id: 2,
-                src: "https://source.unsplash.com/random/600x400/?microscope",
-                caption: "Microscope Observation",
-                category: "research"
-            },
-            {
-                id: 3,
-                src: "https://source.unsplash.com/random/600x400/?conference",
-                caption: "International Conference",
-                category: "conference"
-            },
-            {
-                id: 4,
-                src: "https://source.unsplash.com/random/600x400/?presentation",
-                caption: "Academic Presentation",
-                category: "conference"
-            },
-            {
-                id: 5,
-                src: "https://source.unsplash.com/random/600x400/?fieldwork",
-                caption: "Fieldwork",
-                category: "fieldwork"
-            },
-            {
-                id: 6,
-                src: "https://source.unsplash.com/random/600x400/?nature",
-                caption: "Nature Observation",
-                category: "fieldwork"
-            },
-            {
-                id: 7,
-                src: "https://source.unsplash.com/random/600x400/?team",
-                caption: "Team Building Activity",
+                src: "C:\Users\Leo\Documents\GitHub\Leo-1924.github.io\photo_wall\DSC06548.JPG",
+                caption: "Group Photo2",
                 category: "team"
             },
-            {
-                id: 8,
-                src: "https://source.unsplash.com/random/600x400/?celebration",
-                caption: "Project Completion Celebration",
-                category: "team"
-            }
+ 
         ];
         
         // Current slide index for carousel
