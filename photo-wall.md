@@ -62,7 +62,7 @@ nav_order: 6  # 设置导航顺序
         
         .photo-item img {
             width: 100%;
-            height: 520px;
+            height: 540px;
             object-fit: cover;
             display: block;
         }
@@ -114,7 +114,7 @@ nav_order: 6  # 设置导航顺序
         const photos = [
             {
                 src: "photo_wall/DSC06533.JPG",
-                caption: "Group Photo 1"
+                caption: "Group photo (taken on 2025/3/7; from left to right: Lingze Meng (G1 PhD student), Yue Zhang (G1  PhD student), Ziru Lan (G1 PhD student), Yixin Guo (PI), Ning Chai (Postdoctor)，Zihan Niu (Research assistant), Yulei Yang (G1 Red brid Mphill student); Photo credit to Yue Zhang) "
             },
             {
                 src: "photo_wall/DSC06548.JPG",
