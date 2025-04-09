@@ -118,7 +118,7 @@ nav_order: 6  # 设置导航顺序
             },
             {
                 src: "photo_wall/DSC06548.JPG",
-                caption: "Group Photo 2"
+                caption: "Group photo (taken on 2025/3/7; from left to right: Zihan Niu (Research assistant), Ziru Lan (G1 PhD student), Ning Chai (Postdoctor), Yixin Guo (PI), Yue Zhang (G1  PhD student), Yulei Yang (G1 Red brid Mphill student), Lingze Meng (G1 PhD student); Photo credit to Yue Zhang)"
             },
 
         ];
