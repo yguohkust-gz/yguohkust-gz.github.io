@@ -1,0 +1,16 @@
+<div class="person-card">
+  {% if person.image %}
+    <img src="{{ person.image | relative_url }}" alt="{{ person.title }}">
+  {% endif %}
+  <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
+  <p>{{ person.excerpt | strip_html | truncatewords: 20 }}</p>
+  {% if person.actions %}
+    <div class="person-links">
+      {% for act in person.actions %}
+        <a href="{{ act.url }}" title="{{ act.title }}" target="_blank" rel="noopener">
+          <i class="{{ act.icon }}"></i>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
