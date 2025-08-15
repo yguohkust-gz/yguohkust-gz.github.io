@@ -2,14 +2,15 @@
 title: Yixin Guo (郭怡鑫)
 category: PI 
 anchor_id: people-yixinguo
-image: /images/yixinguo.jpg
+image: "images/people/yixinguo.jpg"
 image_url: people.html#people-yixinguo
 language: en
 order: 1
+layout: person
 actions:
   - email:
     title: Email
-    icon: solid fa-envelope-square
+    icon: "fas fa-envelope-square"
     url: mailto:yixinguo@hkust-gz.edu.cn
   # - github:
   #   title: GitHub
