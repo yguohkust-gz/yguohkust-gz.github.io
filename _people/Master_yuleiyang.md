@@ -5,7 +5,7 @@ anchor_id: people-yuleiyang
 image: /images/yuleiyang02.jpg
 image_url: people.html#people-yuleiyang
 # 详情页永久链接（必须/结尾，防止 404）
-permalink: /people/Master_yuleiyang/
+permalink: /_people/Master_yuleiyang/
 language: en
 order: 1
 actions:
