@@ -1,5 +1,6 @@
 ---
 title: Yue Zhang (张月)
+category: PhD
 anchor_id: people-yuezhang
 image: /images/yuezhang.jpg
 image_url: people.html#people-yuezhang

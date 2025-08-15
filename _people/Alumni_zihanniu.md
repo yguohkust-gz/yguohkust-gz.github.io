@@ -1,5 +1,6 @@
 ---
 title: Zihan Niu (牛子涵)
+category: Alumni
 anchor_id: people-zihanniu
 image: /images/zihanniu.jpg
 image_url: people.html#people-zihanniu

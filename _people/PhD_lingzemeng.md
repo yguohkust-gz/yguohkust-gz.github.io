@@ -1,5 +1,6 @@
 ---
 title: Lingze Meng (孟令泽)
+category: PhD
 anchor_id: people-lingze
 image: /images/lingzemeng.jpg
 image_url: people.html#people-lingzemeng

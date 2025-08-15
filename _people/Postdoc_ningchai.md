@@ -1,5 +1,6 @@
 ---
 title: Ning Chai (柴宁)
+category: Postdoc
 anchor_id: people-ningchai
 image: /images/NingChai.jpg
 image_url: people.html#people-NingChai
