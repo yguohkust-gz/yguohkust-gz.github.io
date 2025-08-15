@@ -4,13 +4,14 @@ category: Master
 anchor_id: people-yuleiyang
 image: /images/yuleiyang02.jpg
 image_url: people.html#people-yuleiyang
+# 详情页永久链接（必须/结尾，防止 404）
+permalink: /people/Master_yuleiyang/
 language: en
-order: 5
+order: 1
 actions:
-  - email:
-    title: Email
-    icon: solid fa-envelope-square
-    url: mailto:yyang605@connect.hkust-gz.edu.cn?Subject=Hello
+  - title: Email
+    icon: "fas fa-envelope-square"
+    url: "mailto:yyang605@connect.hkust-gz.edu.cn?Subject=Hello"
   # - orcid:
   #   title: ORCID
   #   icon: ai ai-orcid-square
