@@ -2,10 +2,9 @@
 title: Yulei Yang (杨宇雷)
 category: Master
 anchor_id: people-yuleiyang
-image: /images/yuleiyang02.jpg
+image: "/images/people/yuleiyang.jpg"
 image_url: people.html#people-yuleiyang
-# 详情页永久链接（必须/结尾，防止 404）
-permalink: /_people/Master_yuleiyang/
+layout: person
 language: en
 order: 1
 actions:

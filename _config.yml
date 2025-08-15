@@ -5,5 +5,8 @@ avatar: /images/header.png
 email: yixinguo@hkust-gz.edu.cn
 
 collections:
-  - research
-  - people
+  research:
+    output: true
+  people:
+    output: true
+    permalink: /people/:name/   # 关键：把 _people → /people/xxx/

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="box page-content">
+  <header>
+    <h2>{{ page.title }}</h2>
+  </header>
+
+  <div class="person-detail">
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+           style="width:200px;height:200px;border-radius:50%;object-fit:cover;float:left;margin:0 2em 1em 0;">
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.actions %}
+    <ul class="actions">
+      {% for act in page.actions %}
+        <li>
+          <a href="{{ act.url }}" title="{{ act.title }}" target="_blank" rel="noopener" class="icon {{ act.icon }}">
+            <span class="label">{{ act.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</article>
