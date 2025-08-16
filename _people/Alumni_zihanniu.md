@@ -2,14 +2,14 @@
 title: Zihan Niu (牛子涵)
 category: Alumni
 anchor_id: people-zihanniu
-image: /images/zihanniu.jpg
+image: "/images/people/zihanniu.jpg"
 image_url: people.html#people-zihanniu
 language: en
 order: 7
+layout: person
 actions:
-  - email:
-    title: Email
-    icon: solid fa-envelope-square
+  - title: Email
+    icon: "fas fa-envelope-square"
     url: mailto:colinniu0622@gmail.com?Subject=Hello
   # - github:
   #   title: GitHub
