@@ -1,4 +1,21 @@
 
+
+
+- guo2025SD:
+  type: article
+  author: Youfan Chen, Yuanhong Zhao, Lin Zhang, <strong>Yixin Guo</strong>, Mi Zhou, Lulu Chen, Yu Yan, Tingkun Li, Yinju Zhang, Yunfan Xu , Bin Luo 
+  title: High-resolution inventories for Reactive Nitrogen Emissions from China’s livestock during 2005–2022
+  year: 2025
+  volume: 12
+  pages: 1062
+  url: https://www.nature.com/articles/s41597-025-05394-x
+  journal: Scientific Data
+  pdf: https://www.nature.com/articles/s41597-025-05394-x.pdf
+  abstract: >
+    China is a global hotspot for reactive nitrogen (Nr) emissions driven by its large livestock sector, which contribute to air pollution, climate change, and biodiversity losses. Despite their importance, current emission inventory development efforts often address singular Nr species, lacking a comprehensive presentation of all Nr species together and their interconnected features. This may jeopardize China’s achievements of carbon neutrality and clean air. In this study, we developed a high-resolution (0.1° × 0.1°) inventory of monthly Nr emissions from livestock manure in China for 23 livestock types from 2005 to 2022. Based on a unified dataset, our inventory provides detailed estimates of multiple Nr emissions from livestock, including ammonia, nitrogen oxides, and nitrous oxide. The inventory can serve as a valuable resource for atmospheric modelling and support integrated nitrogen management strategies in response to China’s evolving agricultural landscape, facilitating future decision-making to tackle environmental challenges associated with the agriculture sector.
+
+
+
 - guo2025EST:
   type: article
   author: Lu Li,  <strong>Yixin Guo</strong>, Jiayu Xu, Xingpei Ye, Danyang Li, Zehui Liu, Chaopu Ti, Xuejun Liu, Lin Zhang
@@ -14,8 +31,6 @@
 
 
 
-
-- <h2> 2025 </h2>
 
 - guo2024NSR:
   type: article
