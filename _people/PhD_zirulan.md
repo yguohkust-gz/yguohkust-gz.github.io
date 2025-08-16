@@ -2,14 +2,14 @@
 title: Ziru Lan (兰子濡)
 category: PhD
 anchor_id: people-zirulan
-image: /images/lanziru.png
+image: "/images/people/lanziru.png"
 image_url: people.html#people-zirulan
 language: en
 order: 3
+layout: person
 actions:
-  - email:
-    title: Email
-    icon: solid fa-envelope-square
+  - title: Email
+    icon: "fas fa-envelope-square"
     url: mailto:lanziru@foxmail.com
   # - github:
   #   title: GitHub

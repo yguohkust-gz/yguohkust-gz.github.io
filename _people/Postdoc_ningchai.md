@@ -2,14 +2,14 @@
 title: Ning Chai (柴宁)
 category: Postdoc
 anchor_id: people-ningchai
-image: /images/NingChai.jpg
+image: "/images/people/NingChai.jpg"
 image_url: people.html#people-NingChai
 language: en
 order: 2
+layout: person
 actions:
-  - email:
-     title: Email
-    icon: solid fa-envelope-square
+  - title: Email
+    icon: "fas fa-envelope-square"
     url: ningchai@hkust-gz.edu.cn
   # - github:
   #   title: GitHub

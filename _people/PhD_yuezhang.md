@@ -2,14 +2,14 @@
 title: Yue Zhang (张月)
 category: PhD
 anchor_id: people-yuezhang
-image: /images/yuezhang.jpg
+image: "/images/people/yuezhang.jpg"
 image_url: people.html#people-yuezhang
 language: en
 order: 6
+layout: person
 actions:
-  - email:
-    title: Email
-    icon: solid fa-envelope-square
+  - title: Email
+    icon: "fas fa-envelope-square"
     url: mailto:yuezh@cqu.edu.cn?Subject=Hello
   # - github:
   #   title: GitHub

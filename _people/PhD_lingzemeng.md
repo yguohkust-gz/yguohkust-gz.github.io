@@ -2,14 +2,14 @@
 title: Lingze Meng (孟令泽)
 category: PhD
 anchor_id: people-lingze
-image: /images/lingzemeng.jpg
+image: "images/people/lingzemeng.jpg"
 image_url: people.html#people-lingzemeng
 language: en
 order: 4
+layout: person
 actions:
-  - email:
-    title: Email
-    icon: solid fa-envelope-square
+  - title: Email
+    icon: "fas fa-envelope-square"
     url: mailto:lmeng830@connect.hkust-gz.edu.cn?Subject=Hello
   - orcid:
     title: ORCID
