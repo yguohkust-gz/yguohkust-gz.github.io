@@ -8,8 +8,7 @@ language: en
 order: 1
 layout: person
 actions:
-  - email:
-    title: Email
+  - title: Email
     icon: "fas fa-envelope-square"
     url: mailto:yixinguo@hkust-gz.edu.cn
   # - github:
