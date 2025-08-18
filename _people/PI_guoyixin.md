@@ -34,7 +34,7 @@ actions:
   - cv:
     title: CV
     icon: ai ai-cv-square
-    url: pdf\Guo_CURRICULUM_VITAE 202408.pdf
+    url: pdf\Guo_CURRICULUM_VITAE 20250717.pdf  
 ---
 
 Dr. Guo joined the Earth, Ocean and Atmospheric Sciences Thrust at the Hongkong University of Science and Technology (Guangzhou) as an assistant professor in March 2024.  
