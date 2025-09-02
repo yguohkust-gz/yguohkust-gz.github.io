@@ -5,7 +5,7 @@ anchor_id: people-nilu
 image: "/images/people/nilu.jpg"  
 image_url: people.html#people-nilu
 language: en
-order: 1
+order: 2
 layout: person
 actions:
   - title: Email

@@ -5,7 +5,7 @@ anchor_id: people-ningchai
 image: "/images/people/NingChai.jpg"
 image_url: people.html#people-NingChai
 language: en
-order: 2
+order: 1
 layout: person
 actions:
   - title: Email
