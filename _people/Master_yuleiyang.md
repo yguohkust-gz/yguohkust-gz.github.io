@@ -1,6 +1,6 @@
 ---
 title: Yulei Yang (杨宇雷)
-category: Master
+category: MPHIL STUDENTS
 anchor_id: people-yuleiyang
 image: "/images/people/yuleiyang.jpg"
 image_url: people.html#people-yuleiyang

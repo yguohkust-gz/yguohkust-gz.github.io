@@ -74,8 +74,8 @@ layout: default      # 关键：改成 default，不再用 feature
 </section>
 
 <!-- ================= Master Students ================= -->
-<section class="people-section" id="master">
-  <h2>Master Students</h2>
+<section class="people-section" id="MPHIL STUDENTS">
+  <h2>MPHIL STUDENTS</h2>
   <div class="people-grid">
   {% assign list = site.people | where: "category","Master" | sort: "order" %}
   {% for person in list %}
