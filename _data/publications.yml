@@ -1,4 +1,53 @@
 
+- guo2026GRA:
+  type: article
+  author: Yeer Cao, Chuanhua Ren, Han Zhang, Zhongwang Wei, <strong>Yixin Guo</strong>, Xitian Cai
+  title: Dynamic Modeling of Ammonia Emissions and Nitrogen Deposition via Online Coupling of WRF-Chem and Noah-MP-CN
+  year: 2026
+  volume: 131
+  pages: e2025JD044260
+  url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025JD044260
+  journal: Journal of Geophysical Research: Atmospheres
+  pdf: https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2025JD044260
+  abstract: >
+    Ammonia (NH3) is an important alkaline gas, mainly emitted from agricultural activities, playing an important role in global nitrogen cycle and surface ecosystems. Chemical transport models and emission inventories are widely used to study the emission, transport, and chemical transformation of NH3. However, traditional static inventories consider emissions as unidirectional, overlooking interactions between NH3 emissions and other ecosystems, especially land surface processes linked to emissions. In this study, we achieved bidirectional NH3 exchange between land surface and atmospheric chemistry models by developing WRF-CN-Chem, a model integrating the Noah-MP land surface model with carbon-nitrogen dynamics (Noah-MP-CN) and the Weather Research and Forecasting model with atmospheric chemistry (WRF-Chem). Compared with the static Multi-resolution Emission Inventory for China, the dynamic bidirectional model exhibits higher spatiotemporal resolution and demonstrated a stronger temporal correlation with satellite observations. WRF-CN-Chem model estimated 7.88 TgN NH3 emission in year 2020 in eastern China. Additionally, we incorporated the atmospheric nitrogen deposition, simulated by the “Online” experiment, into the soil ammonium pool. Our findings revealed an increase of 2.25 TgC yr−1 in land net primary productivity (NPP) in eastern China attributable to the increased nitrogen deposition. By incorporating bidirectional NH3 exchange between land surface and atmosphere chemistry models, this study enhances the simulation of dynamic ammonia emissions and improves understanding of atmospheric nitrogen deposition processes. Furthermore, linking these processes to land NPP provides valuable insights for sustainable land management and pollution mitigation strategies, helping address the environmental impacts of excessive fertilization. 
+
+
+
+
+
+- guo2026NitrogenCycling:
+  type: article
+  author: Jialin Deng, <strong>Yixin Guo</strong>, Ni Lu, Xingpei Ye, Yuanhong Zhao, Jiayu Xu, Lei Liu, Lin Zhang
+  title: Evolving global oceanic nitrogen deposition under future emission pathways and responses to nitrogen emission reductions
+  year: 2026
+  volume: 2
+  pages: 
+  url: https://www.maxapress.com/article/doi/10.48130/nc-0025-0025
+  journal: Nitrogen Cycling
+  pdf: https://www.maxapress.com/data/article/nc/preview/pdf/nc-0025-0025.pdf
+  abstract: >
+    Atmospheric nitrogen deposition is an important external nutrient source to the global ocean, with significant impacts on marine ecosystems and biogeochemical cycles. However, its future evolution under changing anthropogenic emissions and the consequences for ocean productivity and climate-relevant gases such as N2O remain unclear. Here, the global atmospheric chemistry model GEOS-Chem is used to evaluate changes in global oceanic nitrogen deposition between 2015 and 2050 under three representative future emission scenarios and to assess their responses to multiple levels of NH3 and NOx emission reductions. Global oceanic nitrogen deposition is projected to change by −24% to +6% between 2015 and 2050, with a substantially increasing share contributed by reduced nitrogen across all scenarios. There is strong chemical compensation between reduced and oxidized nitrogen deposition: reducing emissions of one species (e.g., NH3 or NOₓ) can enhance dry deposition of the other to the oceans, particularly in coastal regions, suggesting that joint control of NH3 and NOₓ is required to reduce total nitrogen deposition effectively. The potential ocean productivity induced by nitrogen deposition may decrease from 290 Tg C in 2015 to 222 Tg C under SSP1-RCP2.6, or increase to 306 Tg C under SSP3-RCP7.0 by 2050, while concurrent changes in oceanic N2O emissions largely offset the associated climatic effects. These results highlight overlooked impacts of future climate mitigation and nitrogen abatement on marine ecosystems via altered atmospheric nitrogen deposition, and call for more holistic assessments of nitrogen impacts across the air, terrestrial, and ocean systems.
+
+
+
+
+- guo2025EST02:
+  type: article
+  author: Li Sheng, <strong>Yixin Guo</strong>, Yongxin Wu, Zhijiong Huang, Xin Yuan, Keyu Zhu, Lili Wu, Jinlong Zhang, Zibo Wang, Yinyan Huang, Zhuangmin Zhong, Tao Zhang, Duohong Chen, Boguang Wang, Junyu Zheng
+  title: Evaluation and Diagnosis of Regional Ammonia Emission Inventory in the Pearl River Delta Using Multisite NH3 Observations and Model Simulations
+  year: 2025
+  volume: 59
+  pages: 19318-19329
+  url: https://pubs.acs.org/doi/full/10.1021/acs.est.5c01380
+  journal: Environmental Science & Technology
+  pdf: https://pubs.acs.org/doi/pdf/10.1021/acs.est.5c01380?ref=article_openPDF
+  abstract: >
+    Ammonia (NH3) has attracted increasing attention for its reduction potential in fine particulate matter mitigation, yet current NH3 emission inventories involve substantial uncertainties. Previous bottom-up NH3 inventories are usually constrained by satellite observations, deposition measurements, or isotopic analysis and still lack careful validation at fine regional scales. This study develops a novel diagnostic framework combining multisite NH3 observations across the Pearl River Delta (PRD) with the Community Multiscale Air Quality (CMAQ) model simulations and machine learning techniques to evaluate and refine a regional NH3 inventory. Our analysis indicates that the inventory overestimates agricultural emissions, particularly during the wet period, while underestimating nonagricultural sources. Underrepresented precipitation effects were a key driver of overestimated agricultural emissions (∼19% during the wet period). Conversely, a natural experiment during the Spring Festival holiday provided strong evidence that vehicle emissions are a key underestimated nonagricultural source. Adjusting the inventory based on these findings (agricultural sources reduced 39% (31%) during wet (dry) periods, nonagricultural sources increased 70%) improved NH3(g) simulations across the PRD. Our study highlights the value of multisite observations in validating NH3 inventory and the critical need to better characterize underestimated (e.g., vehicles) and missing sources (e.g., urban landscaping) in current inventories.
+
+
+
+
 
 
 - guo2025SD:
